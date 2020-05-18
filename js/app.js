@@ -1,6 +1,12 @@
 "use strict";
 
 /**
+ * REST API
+ * @type {string}
+ */
+const API =
+    "https://raw.githubusercontent.com/VladimirSviridov/Riddles/online/db/package.json";
+/**
  * Создаем класс, который принимает API и берет елмент в котором будет рендериться
  * В свойства помещаем все элементы, такие как элементы разметки, вопросов и ответов
  * Сразу же вызываем _fetch, который вызовет API и заолнит свойства. Своего рода хуки "BeforeCreated"

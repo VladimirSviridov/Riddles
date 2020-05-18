@@ -1,0 +1,83 @@
+$font: Tahoma, sans-serif
+
+*
+    margin: 0
+    padding: 0
+    font-family: $font
+
+body
+    background-color: lightgrey
+
+h1
+    font-size: 40px
+
+.quiz
+    padding: 30px
+    max-width: 800px
+    margin: 0 auto
+    background-color: #fff
+    display: flex
+    flex-direction: column
+    &__title
+        text-align: center
+        padding-bottom: 32px
+        border-bottom: 1px solid lightgrey
+        margin-bottom: 32px
+    &__image
+        object-fit: cover
+        max-width: 100%
+    &__lead
+        font-size: 24px
+        margin: 32px auto
+
+.question
+    display: flex
+    height: 381px
+    align-items: center
+    flex-direction: column
+    &__count
+        color: #f60
+        font-size: 15px
+        font-weight: bold
+        margin: 16px 0
+    &__title
+        font-size: 18px
+        margin: 16px 0
+    &__answer
+        display: flex
+        width: 70vw
+        border: 1px solid lightgrey
+        border-bottom: none
+        max-width: 500px
+        min-height: 68px
+        align-items: center
+        cursor: pointer
+        &:hover
+            background-color: rgba(232, 232, 232, 1)
+        &:last-child
+            border-bottom: 1px solid lightgrey
+        .order
+            padding: 0 32px
+            color: #aaa
+
+.result
+    height: inherit
+    max-width: 600px
+    display: flex
+    position: relative
+    justify-content: center
+    text-align: center
+    &__text
+        position: absolute
+        display: flex
+        height: 80%
+        flex-direction: column
+        justify-content: space-around
+        color: white
+        padding: 16px
+    img
+        filter: brightness(40%)
+        object-fit: cover
+        max-width: 100%
+.reload
+    cursor: pointer
